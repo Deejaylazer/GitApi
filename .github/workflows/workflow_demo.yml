@@ -7,7 +7,7 @@ name: workflow demo
       branches:
         - main
   workflow_dispatch: null
-job:
+jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
