@@ -13,12 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: hello Ndiana
-        run: ecoh "hello Ndiana"
+        run: ecoh "Hello Ndiana"
         shell: bash
 goodbye:
   runs-on: ubuntu-latest
   steps:
     - name: goodbye ndiana
-      run: echo "goodbye ndiana"
+      run: echo "Goodbye ndiana"
       shell: bash
       
