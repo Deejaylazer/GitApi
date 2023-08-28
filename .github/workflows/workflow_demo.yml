@@ -1,0 +1,24 @@
+name: workflow demo
+'on':
+  push:
+    branches:
+      - main
+    pull_request:
+      branches:
+        - main
+  workflow_dispatch: null
+job:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello Ndiana
+        run: ecoh "hello Ndiana"
+        shell: bash
+goodbye:
+  runs-on: ubuntu-latest
+  steps:
+    - name: goodbye ndiana
+      run: echo "goodbye ndiana"
+      shell: bash
+      
